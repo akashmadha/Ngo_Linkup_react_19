@@ -1,0 +1,125 @@
+/* SignUpForm.css */
+.signup-form-container {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 28px 24px 28px;
+}
+.signup-form-header {
+  margin-bottom: 18px;
+}
+.signup-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #22223b;
+}
+.signup-subtitle {
+  color: #6c6c80;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: #6c6c80;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.back-link:hover { color: #22223b; }
+.icon { margin-right: 6px; }
+.signup-form {
+  width: 100%;
+}
+.signup-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 16px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.full-width {
+  grid-column: 1 / 3;
+}
+label {
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #22223b;
+}
+input, select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f9f9fb;
+  color: #22223b;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, select:focus {
+  border-color: #4f46e5;
+  background: #fff;
+}
+.required {
+  color: #e11d48;
+  margin-left: 2px;
+}
+.error-msg {
+  color: #e11d48;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+.success-msg {
+  color: #059669;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+.signup-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-primary {
+  background: #4f46e5;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #3730a3;
+}
+.btn-secondary {
+  background: #e5e7eb;
+  color: #22223b;
+}
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+.signup-form-footer {
+  margin-top: 18px;
+}
+@media (max-width: 700px) {
+  .signup-form-container {
+    padding: 18px 6px 12px 6px;
+  }
+  .signup-form-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .full-width {
+    grid-column: 1 / 2;
+  }
+} 

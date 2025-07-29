@@ -1,0 +1,59 @@
+/* DistrictMaster.css */
+.districts-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 80px;
+  gap: 0.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+.districts-grid-header {
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 0.5rem;
+}
+.districts-grid-cell {
+  color: #334155;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  background: transparent;
+}
+.districts-grid-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 0.5rem 0;
+}
+.districts-grid-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+.districts-grid-btn.edit {
+  color: #0ea5e9;
+}
+.districts-grid-btn.edit:hover {
+  color: #0369a1;
+}
+.districts-grid-btn.delete {
+  color: #ef4444;
+}
+.districts-grid-btn.delete:hover {
+  color: #b91c1c;
+}
+.districts-grid-empty {
+  grid-column: 1 / span 3;
+  text-align: center;
+  color: #94a3b8;
+  padding: 1.5rem 0;
+  font-size: 1.1rem;
+} 
